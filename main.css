@@ -85,8 +85,6 @@ textarea:focus, input:focus, input[type]:focus {
     padding-top: 3px;
 }
 
-
-
 #title {
     text-align: center;
     text-shadow: 2px 2px 10px #000000;
@@ -162,4 +160,33 @@ textarea:focus, input:focus, input[type]:focus {
 
 #submit {
     color: black;
+}
+
+@media screen and (max-width: 425px) {
+    #title {
+        font-size: 500%;
+        margin-bottom: 0px;
+        padding: 0px;
+        text-align: center;
+    }
+    #description {
+        font-size: 100%;
+        text-align: center;
+    }
+    #survey-form {
+        margin: auto;
+        padding: auto;
+        font-size: xx-small;
+    }
+
+    .datos-personales {
+        display: flex;
+        flex-direction: column;
+        font-size: x-small;
+    }
+    
+
+
+
+
 }
