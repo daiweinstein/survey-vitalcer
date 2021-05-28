@@ -1,5 +1,7 @@
 body {
-    background-image:url(imagen/fondouno.jpeg)
+    background-image:url(imagen/fondouno.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
     }
 
 *{
@@ -96,7 +98,7 @@ textarea:focus, input:focus, input[type]:focus {
 
 #description {
     text-align: center;
-    text-shadow: -9px 11px 10px #000000;
+    text-shadow: -4px 4px 10px #000000;
     font-size: 20px;
 }
 
@@ -163,30 +165,83 @@ textarea:focus, input:focus, input[type]:focus {
 }
 
 @media screen and (max-width: 425px) {
+    
+    *{
+        font-size: small;
+    }
+    
     #title {
         font-size: 500%;
         margin-bottom: 0px;
         padding: 0px;
         text-align: center;
     }
+    
     #description {
         font-size: 100%;
         text-align: center;
     }
+    
     #survey-form {
         margin: auto;
         padding: auto;
-        font-size: xx-small;
+   
     }
-
+    
+    #container-form {
+        display: flex;
+        align-items: center;
+    }
+    
     .datos-personales {
         display: flex;
         flex-direction: column;
-        font-size: x-small;
+        align-items: center;
+    
     }
     
+    #radio-frecuencia{
+        width: 100%;
+        margin-left: 25px;
+    }
 
+    #label-frecuencia{
+        text-align: center;
+        margin-left: 0;
+        margin-right: 10px;
+    }
 
+    #label-productos {
+        text-align: center;
+    
+    }
+    
+    .datos-productos {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 16% 16% 16% 16% 16% 16%;
+        margin-top: 1%;
+        margin-bottom: 2%;
+    }
 
+    #opinion {
+        height: 130px;
+    }
 
+    
+
+}
+
+@media screen and (max-width: 375px) {
+    #check-productos{
+        margin-top: 8px;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    #check-productos{
+        margin-top: 8px;
+    }
+    
 }
